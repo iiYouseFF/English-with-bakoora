@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #C8102E;
+    --secondary-color: #f0f0f0;
+    --tertiary-color: #012169;
+    --text-color: #000;
+    --white-color: #fff;
+}
+
+body {
+    background-color: var(--secondary-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--secondary-color);
+
+    &:focus {
+        border-width: 2px;
+    }
+}
+
+
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    padding: 16px 20px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: var(--tertiary-color);
+        color: var(--white-color);
+    }
+}
+
+.signup {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.signup a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .title h1 {
+        font-size: 20px;
+    }
+
+    .form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    input {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    button {
+        width: 80%;
+        margin: 0 auto;
+    }
+}

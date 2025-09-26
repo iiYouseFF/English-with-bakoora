@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../style/login.css" />
+    <link rel="stylesheet" href="../style/snakebar.css" />
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <h1>login</h1>
+      </div>
+      <div class="form">
+        <input
+          type="email"
+          name="SE"
+          placeholder="Student Email"
+          id="SE"
+          required
+        />
+        <input
+          type="password"
+          name="PW"
+          placeholder="Password"
+          id="PW"
+          required
+        />
+        <button id="login">Login</button>
+      </div>
+      <div class="signup">
+        <p>Don't Have An Account? <a href="signup.html">Signup</a></p>
+      </div>
+      <div id="snackbar"></div>
+    </main>
+    <script type="module" src="../lib/login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  </body>
+</html>
