@@ -37,6 +37,12 @@ header .title h1{
     color: var(--secondary-color);
 }
 
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
 header nav ul{
     list-style: none;
     display: flex;
@@ -75,6 +81,49 @@ header nav ul li:hover{
     font-size: 28px;
     color: var(--secondary-color);
     cursor: pointer;
+}
+
+#profile-icon {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* يخليها دائرة */
+    background-color: var(--secondary-color); /* اللون الأساسي */
+    color: var(--text-color); /* لون الحرف */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        transform: translateY(-2px);
+    }
+    &:active{
+        transform: translateY(2px);
+    }
+}
+
+#qrcode img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.infocard{
+    width: 50%;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: var(--text-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#userName , #userID{
+    color: var(--secondary-color);
+    font-size: 50px;
+    font-weight: 900;
 }
 
 @media (max-width: 768px) {
