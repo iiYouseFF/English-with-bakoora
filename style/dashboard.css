@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #C8102E;
+    --secondary-color: #f0f0f0;
+    --tertiary-color: #012169;
+    --text-color: #000;
+    --white-color: #fff;
+}
+
+body {
+    background-color: var(--secondary-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0px 0px 10px black;
+}
+
+header .title h1{
+    font-size: 35px;
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    position: relative;
+    &::after{
+        content: "";
+        width: 0%;
+        height: 4px;
+        border-radius: 12px;
+        background-color: var(--text-color);
+        position: absolute;
+        bottom: -6px;
+        left: 0%;
+        transition: all 0.5s ease-out;
+    }
+}
+header nav ul li:hover ::after{
+    width: 100%;
+}
+header nav ul li:hover{
+    transform: translateY(-2px);
+}
+
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+        height: 100vh;
+    }
+
+    header .title h1 {
+        font-size: 20px;
+    }
+     header nav ul {
+        display: none;
+        flex-direction: column;
+        background: var(--primary-color);
+        position: absolute;
+        top: 100px;
+        right: 20px;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    header nav ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

@@ -63,7 +63,7 @@ main {
     background-color: var(--tertiary-color);
     padding: 16px 20px;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 12px;
     transition: all 0.3s ease;
 
     &:hover {
