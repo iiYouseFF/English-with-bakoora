@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/profile.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Simple English with bakoora</h1>
+        </div>
+        <nav>
+            <ul id="navLinks">
+                <li>
+                    <a href="dashboard.html">
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Lecturs
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Grades
+                    </a>
+                </li>
+            </ul>
+            <div class="profile-icon" id="profile-icon"></div>
+            <div class="hamburger" id="hamburger">☰</div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="profile-icon"></div>
+        <div id="user-name"></div>
+        <div id="user-email"></div>
+        <div id="user-phone"></div>
+        <div id="user-p-phone"></div>
+        <div id="logout">
+            <button>Log Out</button>
+        </div>
+    </div>
+    <div id="cont">
+         <div id="popup">
+        <div class="messege">
+            <h1>Log out</h1>
+            <p>Are You Sure?</p>
+            <div class="btns">
+                <button id="yes">Yes</button>
+                <button id="no">No</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="module" src="../lib/profileIcon.js"></script>
+    <script type="module" src="../lib/profile.js"></script>
+</body>
+</html>
