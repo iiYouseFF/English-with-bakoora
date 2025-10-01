@@ -29,7 +29,7 @@ body {
     width: 50%;
     margin: 50px auto;
     padding: 10px;
-    background-color: var(--primary-color);
+    background-color: var(--text-color);
     border-radius: 20px;
     display: flex;
     justify-content: center;
