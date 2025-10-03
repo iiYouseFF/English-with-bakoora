@@ -13,7 +13,8 @@
       </header>
       <div id="admin-content">
         <h2>Users</h2>
-        <table id="usersTable">
+        <div class="table-container">
+           <table id="usersTable">
           <thead>
             <tr>
               <th>ID</th>
@@ -23,10 +24,14 @@
           </thead>
           <tbody></tbody>
         </table>
+        </div>
         <button id="loadMoreUsers">See More Users</button>
 
         <!-- SESSIONS TABLE -->
         <h2>Sessions <a href="../src/sessions.html" id="addSession">Add Session</a></h2>
+        <div class="table-container">
+
+        
         <table id="sessionsTable">
           <thead>
             <tr>
@@ -37,10 +42,12 @@
           </thead>
           <tbody></tbody>
         </table>
+      </div>
         <button id="loadMoreSessions">See More Sessions</button>
 
         <!-- ATTENDANCE TABLE -->
         <h2>Attendance </h2>
+        <div class="table-container">
         <table id="attendanceTable">
           <thead>
             <tr>
@@ -52,6 +59,7 @@
           </thead>
           <tbody></tbody>
         </table>
+      </div>
         <button id="loadMoreAttendance">See More Attendance</button>
       </div>
     </main>
