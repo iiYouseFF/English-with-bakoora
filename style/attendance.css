@@ -101,6 +101,16 @@ button{
     }
 }
 
+.back{
+    margin-top: 20px;
+}
+.back a{
+    padding: 20px;
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
 @media (max-width: 768px) {
     main {
         width: 100%;

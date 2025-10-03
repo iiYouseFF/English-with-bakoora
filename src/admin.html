@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../style/header.css" />
+    <link rel="stylesheet" href="../style/admin.css" />
+  </head>
+  <body>
+    <main>
+      <header id="header">
+      </header>
+      <div id="admin-content">
+        <h2>Users</h2>
+        <table id="usersTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Email</th>
+              <th>Name</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <button id="loadMoreUsers">See More Users</button>
+
+        <!-- SESSIONS TABLE -->
+        <h2>Sessions <a href="../src/sessions.html" id="addSession">Add Session</a></h2>
+        <table id="sessionsTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <button id="loadMoreSessions">See More Sessions</button>
+
+        <!-- ATTENDANCE TABLE -->
+        <h2>Attendance </h2>
+        <table id="attendanceTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>User ID</th>
+              <th>Session ID</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <button id="loadMoreAttendance">See More Attendance</button>
+      </div>
+    </main>
+    <script type="module" src="../lib/admin.js"></script>
+    <script type="module" src="../lib/profileIcon.js"></script>
+    <script type="module" src="../lib/header.js"></script>
+  </body>
 </html>

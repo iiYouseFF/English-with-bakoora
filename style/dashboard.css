@@ -25,6 +25,13 @@ body {
     width: 100%;
 }
 
+#infotitle{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 30px 0  20px 0;
+}
+
 .infocard{
     width: 50%;
     margin: 50px auto;
