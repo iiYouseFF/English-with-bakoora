@@ -75,7 +75,8 @@ th{
 tr:hover{
     background-color: #f1f1f1;
 }
-.edit , .delete{
+.edit , .delete , .view{
+    text-decoration: none;
     padding: 8px 16px;
     border: none;
     border-radius: 8px;
@@ -83,9 +84,24 @@ tr:hover{
     font-weight: 700;
     color: var(--white-color);
     background-color: var(--tertiary-color);
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        transform: translateY(-2px);
+    }
+    &:active{
+        transform: translateY(2px);
+    }
+}
+.actions{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .delete{
     background-color: var(--primary-color);
+}
+.view{
+    background-color: rgb(255, 196, 0);
 }
 #addSession , #attend{
     text-decoration: none;

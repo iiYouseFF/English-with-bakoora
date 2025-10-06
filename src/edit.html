@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT</title>
+    <link rel="stylesheet" href="../style/sessions.css">
+</head>
+<body>
+    <main>
+        <h1>Create Session</h1>
+        <div class="form" id="sessionForm">
+            <input type="text" id="sessionName" placeholder="Enter session name" name="title" required>
+            <input type="date" id="sessionDate" placeholder="Select session date" name="date" required>
+            <input type="url"  id="sessionLink" placeholder="Enter session link" name="link" required>
+            <button id="submit">Submit</button>
+        </div>
+        <div class="back">
+            <a href="admin.html">Back to Admin Panel</a>
+        </div>
+        <div id="snackbar"></div>
+    </main>
+
+
+    <script type="module" src="../lib/edit.js"></script>
+</body>
+</html>
