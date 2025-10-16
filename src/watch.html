@@ -10,10 +10,13 @@
     <main>
         <h1>Watch Session</h1>
         
-        <iframe id="iframe" title="YouTube video player" 
-        frameborder="0"
-        allowfullscreen>
-        </iframe>
+        <div class="yt-embed-holder">
+            <iframe id="iframe" title="YouTube video player"
+            frameborder="0"
+            allow="autoplay"
+            allowfullscreen>
+            </iframe>
+        </div>
 
         <div class="sessionInfo">
             <p id="title"></p>
@@ -24,6 +27,5 @@
         </button>
     </main>
     <script type="module" src="../lib/watch.js"></script>
-    <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 </html>
