@@ -108,7 +108,7 @@ button {
     color: var(--secondary-color);
 }
 
-.signup a {
+.signup a{
     text-decoration: none;
     color: var(--tertiary-color);
 }
@@ -117,7 +117,12 @@ button {
     text-decoration: underline;
 }
 
-
+#reset{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-align: center;
+}
 @media (max-width: 768px) {
     main {
         width: 100%;
