@@ -61,7 +61,6 @@ iframe{
     margin: 0 auto;
     overflow: hidden;
     aspect-ratio: 16/9;
-    pointer-events: none;
 }
 .yt-embed-holder iframe{
     width: 100%;
